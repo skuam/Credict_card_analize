@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Total_Trans_Ct <= 55.998\nsamples = 13600\nvalue = [6824, 6776]\nclass = Otwarte konto", fillcolor="#fffefe"] ;
+1 [label="Total_Revolving_Bal <= 657.907\nsamples = 7345\nvalue = [1793, 5552]\nclass = Zamknięte konto", fillcolor="#79bded"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Total_Ct_Chng_Q4_Q1 <= 0.828\nsamples = 3847\nvalue = [267, 3580]\nclass = Zamknięte konto", fillcolor="#48a4e7"] ;
+1 -> 2 ;
+3 [label="samples = 3601\nvalue = [182, 3419]\nclass = Zamknięte konto", fillcolor="#44a2e6"] ;
+2 -> 3 ;
+4 [label="samples = 246\nvalue = [85, 161]\nclass = Zamknięte konto", fillcolor="#a2d1f3"] ;
+2 -> 4 ;
+5 [label="Total_Relationship_Count <= 2.997\nsamples = 3498\nvalue = [1526, 1972]\nclass = Zamknięte konto", fillcolor="#d2e9f9"] ;
+1 -> 5 ;
+6 [label="samples = 834\nvalue = [39, 795]\nclass = Zamknięte konto", fillcolor="#43a2e6"] ;
+5 -> 6 ;
+7 [label="samples = 2664\nvalue = [1487, 1177]\nclass = Otwarte konto", fillcolor="#fae5d6"] ;
+5 -> 7 ;
+8 [label="Total_Trans_Amt <= 5348.38\nsamples = 6255\nvalue = [5031, 1224]\nclass = Otwarte konto", fillcolor="#eba069"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Total_Trans_Ct <= 60.971\nsamples = 4216\nvalue = [3995, 221]\nclass = Otwarte konto", fillcolor="#e68844"] ;
+8 -> 9 ;
+10 [label="samples = 514\nvalue = [350, 164]\nclass = Otwarte konto", fillcolor="#f1bc96"] ;
+9 -> 10 ;
+11 [label="samples = 3702\nvalue = [3645, 57]\nclass = Otwarte konto", fillcolor="#e5833c"] ;
+9 -> 11 ;
+12 [label="Total_Trans_Ct <= 81.978\nsamples = 2039\nvalue = [1036, 1003]\nclass = Otwarte konto", fillcolor="#fefbf9"] ;
+8 -> 12 ;
+13 [label="samples = 1015\nvalue = [85, 930]\nclass = Zamknięte konto", fillcolor="#4ba6e7"] ;
+12 -> 13 ;
+14 [label="samples = 1024\nvalue = [951, 73]\nclass = Otwarte konto", fillcolor="#e78b48"] ;
+12 -> 14 ;
+}
